@@ -13,29 +13,54 @@
     }
     header {
       background: #1f2937;
-      padding: 20px;
+      padding: 50px 20px;
     }
     header h1 {
-      margin: 0; font-size: 2.5rem;
+      margin: 0; font-size: 3rem;
+    }
+    header p {
+      margin: 10px 0;
+      font-size: 1.2rem;
+      color: #9ca3af;
     }
     nav a {
-      margin: 0 10px; color: #58a6ff; text-decoration: none;
+      margin: 0 12px; 
+      color: #58a6ff; 
+      text-decoration: none;
+      font-weight: bold;
     }
     section {
-      padding: 50px 20px;
+      padding: 60px 20px;
     }
     .btn {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 24px;
+      margin: 15px;
+      padding: 15px 30px;
       background: #58a6ff;
       color: #fff; border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.2s;
+    }
+    .btn:hover {
+      background: #1d4ed8;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .feature {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 12px;
     }
     footer {
       background: #161b22;
-      padding: 15px; font-size: 0.9rem;
+      padding: 20px; font-size: 0.9rem;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -43,7 +68,7 @@
 
 <header>
   <h1>Cenoryx Security</h1>
-  <p>The all-in-one Discord security solution.</p>
+  <p>The all-in-one Discord security solution</p>
   <nav>
     <a href="#features">Features</a>
     <a href="#invite">Invite</a>
@@ -53,13 +78,12 @@
 
 <section id="features">
   <h2>🔒 Features</h2>
-  <p>Keep your server safe with powerful moderation tools.</p>
-  <ul style="list-style:none; padding:0;">
-    <li>✅ Ban, Kick, Mute, Unban</li>
-    <li>✅ Anti-Raid & Anti-Spam</li>
-    <li>✅ Logging System</li>
-    <li>✅ Customizable Security Settings</li>
-  </ul>
+  <div class="features">
+    <div class="feature">✅ Ban, Kick, Mute</div>
+    <div class="feature">✅ Anti-Raid & Anti-Spam</div>
+    <div class="feature">✅ Logging System</div>
+    <div class="feature">✅ Customizable Security Settings</div>
+  </div>
 </section>
 
 <section id="invite">
@@ -74,4 +98,3 @@
 
 </body>
 </html>
-
