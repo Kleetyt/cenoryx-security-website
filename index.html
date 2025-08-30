@@ -13,10 +13,15 @@
     }
     header {
       background: #1f2937;
-      padding: 50px 20px;
+      padding: 40px 20px;
+    }
+    header img {
+      width: 120px;
+      border-radius: 50%;
     }
     header h1 {
-      margin: 0; font-size: 3rem;
+      margin: 10px 0 0;
+      font-size: 3rem;
     }
     header p {
       margin: 10px 0;
@@ -62,39 +67,21 @@
       padding: 20px; font-size: 0.9rem;
       margin-top: 40px;
     }
+    .stats {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      color: #10b981;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
 
 <header>
+  <img src="logo.png" alt="Cenoryx Security Logo">
   <h1>Cenoryx Security</h1>
   <p>The all-in-one Discord security solution</p>
-  <nav>
-    <a href="#features">Features</a>
-    <a href="#invite">Invite</a>
-    <a href="#support">Support</a>
-  </nav>
-</header>
-
-<section id="features">
-  <h2>🔒 Features</h2>
-  <div class="features">
-    <div class="feature">✅ Ban, Kick, Mute</div>
-    <div class="feature">✅ Anti-Raid & Anti-Spam</div>
-    <div class="feature">✅ Logging System</div>
-    <div class="feature">✅ Customizable Security Settings</div>
-  </div>
-</section>
-
-<section id="invite">
-  <h2>🚀 Get Started</h2>
-  <a class="btn" href="https://discord.com/oauth2/authorize?client_id=1396988021798342827&permissions=8&scope=bot%20applications.commands">Invite Cenoryx</a>
-  <a class="btn" href="https://discord.gg/wnkGebYQS2">Join Support Server</a>
-</section>
-
-<footer>
-  <p>© 2025 Cenoryx Security • Made with ❤️ for Discord</p>
-</footer>
-
-</body>
-</html>
+  
+  <!-- ✨ Edit these numbers anytime directly here -->
+  <div class="stats">
+    Protecting <span id="members">12,345</span> members in <span id="servers">123</span> servers
